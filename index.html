@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agenda de contatos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Borel&family=Silkscreen:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <img src="./imagens/agenda-icone.png" alt="Icone de agenda de contatos" />
+      <h1>Agenda de contatos</h1>
+      <h3>Número de contatos: 0</h3>
+    </header>
+
+    <main>
+      <form id="form-agenda">
+        <input type="text" name="nome" id="nome" placeholder="Nome completo" required>
+        <input type="tel" name="telefone" id="telefone" placeholder="Telefone com DDD" required>
+        <button type="submit">Cadastrar</button>
+      </form>
+
+      <table cellspacing="0">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Telefone</th>
+            <th>Estado</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+              <td>---</td>
+              <td>---</td>
+              <td>---</td>
+          </tr>
+        </tbody>
+
+      </table>
+    </main>
+
+    <footer>
+      © <span id="ano"></span> Omar. Todos os direitos reservados.
+    </footer>
+  </div>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>
