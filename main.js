@@ -12,8 +12,6 @@ form.addEventListener('submit', function (e) {
   const inputNome = document.getElementById('nome');
   const inputTelefone = document.getElementById('telefone');
 
-  console.log(`telefone: ${inputTelefone.value}`);
-
   if (nomes.includes(inputNome.value)) {
     alert(`O contato ${inputNome.value} já foi inserido`);
   } else if (!validarTelefone(inputTelefone.value)) {
@@ -73,8 +71,6 @@ function dddEstado(telefone) {
 function validarTelefone(telefone) {
 
   formatedPhone = telefone.replace(/\D/g, '');
-
-  console.log(formatedPhone);
 
   const regexTelefone = /^(0?\d{2})\s?(?:9\d{8}|\d{8})$/;
 
